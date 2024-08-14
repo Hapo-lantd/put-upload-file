@@ -14,10 +14,10 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./app
     container_name: react-frontend
     volumes:
-      - ./frontend/www:/app
+      - ./app/www:/app
     ports:
       - "3000:3000"
     depends_on:
